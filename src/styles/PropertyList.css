@@ -1,0 +1,53 @@
+/* PropertyList.css */
+
+.property-list {
+  display: flex;
+  flex-wrap: wrap; /* Allows cards to wrap if there isn't enough space */
+  justify-content: flex-start; /* Align items to the start (left) */
+  padding: 20px;
+  gap: 20px; /* Adds space between property cards */
+}
+
+.property-card {
+  background-color: #ffffff; /* Changed to white for a cleaner look */
+  border: 1px solid #ddd; /* Border around the card */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 15px;
+  flex: 0 1 300px; /* Allow cards to grow/shrink, set a base width */
+  text-align: left; /* Align text to the left */
+  transition: transform 0.2s, box-shadow 0.2s; /* Animation on hover */
+}
+
+.property-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.property-card h2 {
+  font-size: 20px; /* Slightly larger font size for the title */
+  margin: 0 0 10px 0; /* Margin below the title */
+  color: #333; /* Darker color for the title */
+}
+
+.property-card p {
+  margin: 5px 0; /* Margin for paragraphs */
+  color: #555; /* Slightly lighter text color */
+}
+
+.property-images {
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  gap: 5px; /* Space between images */
+}
+
+.property-images img {
+  width: 100%; /* Make images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded corners for images */
+  transition: transform 0.2s; /* Animation for images */
+}
+
+.property-images img:hover {
+  transform: scale(1.05); /* Zoom effect on image hover */
+}

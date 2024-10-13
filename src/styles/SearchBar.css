@@ -1,0 +1,85 @@
+.search-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; /* Center align items vertically */
+  background-color: #ffffff; /* White background for a clean look */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  gap: 15px; /* Space between elements */
+  margin-bottom: 30px; /* Space below the search bar */
+}
+
+.search-bar input,
+.search-bar select {
+  flex: 1; /* Allow inputs to grow and fill space */
+  min-width: 200px; /* Minimum width for better usability */
+  padding: 12px 15px; /* Padding for better touch targets */
+  font-size: 14px; /* Font size for readability */
+  border: 1px solid #d1d1d1; /* Light border for inputs */
+  border-radius: 5px; /* Rounded corners for inputs */
+  outline: none; /* Remove outline */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions for focus state */
+}
+
+.search-bar input:focus,
+.search-bar select:focus {
+  border-color: #ff6f61; /* Highlight border on focus */
+  box-shadow: 0 0 5px rgba(255, 111, 97, 0.5); /* Soft glow effect on focus */
+}
+
+.price-range {
+  display: flex;
+  justify-content: space-between; /* Space between price inputs */
+  gap: 15px; /* Gap between elements */
+  width: 100%; /* Full width */
+}
+
+.price-range input {
+  flex: 1; /* Allow price inputs to grow */
+  min-width: 45%; /* Minimum width for price inputs */
+}
+
+button {
+  flex: 1; /* Allow button to grow */
+  min-width: 150px; /* Minimum width for button */
+  padding: 14px; /* Button padding */
+  background-color: #ff6f61; /* Main button color */
+  color: white; /* Text color */
+  font-size: 16px; /* Font size for button */
+  font-weight: bold; /* Bold text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+}
+
+button:hover {
+  background-color: #e65c55; /* Darker shade on hover */
+}
+
+button:active {
+  transform: scale(0.95); /* Scale down on click for effect */
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .search-bar input,
+  .search-bar select,
+  .price-range input,
+  button {
+    width: 100%; /* Full width for mobile */
+  }
+
+  .price-range {
+    flex-direction: column; /* Stack price range inputs on mobile */
+  }
+
+  .price-range input {
+    margin-bottom: 10px; /* Space below price inputs */
+  }
+}

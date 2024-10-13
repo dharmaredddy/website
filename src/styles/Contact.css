@@ -1,0 +1,47 @@
+.contact-container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    max-width: 600px; /* Limit the width of the contact section */
+    margin: auto; /* Center the contact section */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .contact-container h2 {
+    text-align: center; /* Center the header */
+    color: #333; /* Dark text for contrast */
+    margin-bottom: 20px; /* Space below the header */
+  }
+  
+  .contact-link {
+    display: flex; /* Flexbox for icon and text */
+    align-items: center; /* Center icon and text vertically */
+    color: #4CAF50; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin: 10px 0; /* Space between links */
+    padding: 10px; /* Padding around links */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition effects */
+  }
+  
+  .contact-link:hover {
+    background-color: #e8f5e9; /* Light green background on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  .contact-link i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.2em; /* Icon size */
+  }
+  
+  .contact-link span {
+    font-weight: 500; /* Slightly bolder text */
+  }
+  
+  .contact-info {
+    font-size: 1em; /* Standard size for additional text */
+    color: #555; /* Lighter text color for less emphasis */
+    margin: 5px 0; /* Space between info paragraphs */
+  }
+  

@@ -1,0 +1,52 @@
+/* src/index.css */
+
+/* Reset some default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Change to your preferred font */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color */
+}
+
+a {
+    color: inherit; /* Use the text color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points from lists */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem; /* Space below headings */
+}
+
+/* Container for responsive design */
+.container {
+    width: 90%;
+    max-width: 1200px; /* Limit max width */
+    margin: 0 auto; /* Center the container */
+    padding: 1rem; /* Space inside the container */
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007BFF; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

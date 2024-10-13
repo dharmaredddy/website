@@ -1,0 +1,51 @@
+.signup-container {
+    font-family: 'Arial', sans-serif; /* Clean sans-serif font */
+    max-width: 400px; /* Limit the width of the signup box */
+    margin: 100px auto; /* Center the container vertically and horizontally */
+    padding: 30px; /* Padding inside the container */
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  }
+  
+  .signup-container h2 {
+    text-align: center; /* Center the header */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Space below the header */
+  }
+  
+  input[type="email"],
+  input[type="password"] {
+    width: 100%; /* Full width inputs */
+    padding: 12px; /* Padding inside the inputs */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1em; /* Base font size */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: #4CAF50; /* Green border on focus */
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Light shadow on focus */
+  }
+  
+  button {
+    width: 100%; /* Full width button */
+    padding: 12px; /* Padding inside the button */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1.2em; /* Slightly larger font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
